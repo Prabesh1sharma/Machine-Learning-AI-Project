@@ -54,7 +54,7 @@ def biggestContour(contours):
     max_area = 0
     for i in contours:
         area = cv2.contourArea(i)
-        if area > 5000:
+        if area > 1000:
             peri = cv2.arcLength(i, True)
             approx = cv2.approxPolyDP(i, 0.02 * peri, True)
             if area > max_area and len(approx) == 4:

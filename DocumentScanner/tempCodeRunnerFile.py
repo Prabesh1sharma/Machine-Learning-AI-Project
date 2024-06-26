@@ -1,1 +1,1 @@
-False
+cap.set(10, 60)
